@@ -68,14 +68,14 @@ Source of truth: [PRODUCT_BRIEF.md](PRODUCT_BRIEF.md). Scope: consumer and B2B s
 
 **Verification:** 38 updated screenshots at 1440, 1280, 768 and 390px, with 18 original desktop/mobile captures for comparison. No page errors, external browser requests or horizontal page overflow in the final screenshot pass. The browser suite exercises route navigation, recording, shopping, policy editing, mock checkout, investigation, replay, grid interactions and demo links. No business logic, API or database schema changed in this visual pass.
 
-## Public repository preparation — locally complete
+## Public repository — published
 
 - [x] Keep `.env.local`, `data/`, SQLite/WAL files, build output, browser traces and logs ignored.
 - [x] Add [local setup](docs/SETUP.md) with official Ollama and Channel3 onboarding links, required environment names and no-key instructions.
 - [x] Replace event-specific and provider-branded public copy with product-neutral descriptions while keeping the optional sandbox code and original recorded evidence intact.
 - [x] Complete the public-file and secret scan, rerun all automated checks, inspect the screenshots and verify local documentation links.
 - [x] Prepare and inspect an isolated local Git staging copy for the public file set.
-- [ ] Create the selected public repository and publish after the owner confirms its destination and GitHub access is restored. No publication or deployment has occurred.
+- [x] Publish the reviewed release to the public `quicksparrow/rogue-agent-control` repository. No deployment has occurred.
 
 ## Verification log
 
@@ -90,7 +90,7 @@ Source of truth: [PRODUCT_BRIEF.md](PRODUCT_BRIEF.md). Scope: consumer and B2B s
 
 **Public-copy update verification, November 17, 2026:** `npm run typecheck` passed; `npm test` passed **122/122**; `npm run build` passed; `npm run test:e2e` passed **28/28** against that production build. The first browser pass found one exact-heading assertion still expecting the old checkout text; its expected string was updated without changing its behavioral checks, and the complete rerun passed. The local Markdown-link audit found no missing targets. A case-insensitive scan found no removed provider or event name in public Markdown, `.env.example` or application-owned UI text. Public screenshots were visually checked; older branded before/after copies were removed from the distributable image directory, while the synthetic demo screenshots remain. The existing sensitive-data audit found no configured credentials in client assets or saved artifacts, no raw tokens or buyer fields in exported artifacts, and **zero new payments**. The historical-integrity check confirmed **916 original rows unchanged across four local databases**. Tests use mocks for provider flows; they do not verify a new transaction or a contributor's own API configuration.
 
-**Publication audit, November 17, 2026:** An isolated ignored source copy installed **140 packages with zero npm advisories**, passed its production build and **122/122** unit/API tests, and served the no-key demo. In that copy, genuine private archive cards were unavailable and the synthetic quantity exercise was available. A local Git staging review included **132 files** and excluded `.env.local`, `data/`, dependencies, build output and browser artifacts. Four configured credential values were checked against staged text files without printing them; **zero matches** were found. Staged files match the reviewed workspace by SHA-256, and `git diff --cached --check` passes. The local GitHub CLI login is invalid and no destination repository exists, so nothing has been published. Internal sandbox adapter identifiers and fixed private run references remain in source by the owner's public-UI-and-docs-only scope; the private recordings themselves are excluded.
+**Publication audit, November 17, 2026:** An isolated ignored source copy installed **140 packages with zero npm advisories**, passed its production build and **122/122** unit/API tests, and served the no-key demo. In that copy, genuine private archive cards were unavailable and the synthetic quantity exercise was available. A local Git staging review included **132 files** and excluded `.env.local`, `data/`, dependencies, build output and browser artifacts. Four configured credential values were checked against staged text files without printing them; **zero matches** were found. Staged files matched the reviewed workspace by SHA-256, and `git diff --cached --check` passed. The reviewed release was published to the public `quicksparrow/rogue-agent-control` repository. Its `main` branch matched the local commit, and `.env.local` was absent from the public tree. Internal sandbox adapter identifiers and fixed private run references remain in source by the owner's public-UI-and-docs-only scope; the private recordings themselves are excluded.
 
 ## Known limits and roadmap
 
