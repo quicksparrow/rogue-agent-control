@@ -1,0 +1,14 @@
+node_modules/
+.next/
+data/
+.env*
+!.env.example
+*.db
+*.db-*
+*.sqlite*
+*.tsbuildinfo
+playwright-report/
+test-results/
+output/playwright/
+.impeccable/
+*.log

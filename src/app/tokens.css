@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "Geist";
+  src: url("../../node_modules/next/dist/next-devtools/server/font/geist-latin.woff2") format("woff2");
+  font-weight: 100 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Geist Mono";
+  src: url("../../node_modules/next/dist/next-devtools/server/font/geist-mono-latin.woff2") format("woff2");
+  font-weight: 100 900;
+  font-display: swap;
+}
+:root {
+  color-scheme: light;
+  --navy: #152a43;
+  --blue: #326da5;
+  --blue-hover: #285a89;
+  --blue-secondary: #6d9fc6;
+  --blue-soft: #eaf3fa;
+  --blue-line: #afcce4;
+  --bg: #f7f9fc;
+  --surface: #fff;
+  --subtle-surface: #f1f5f9;
+  --text: #1b2a3d;
+  --muted: #53677e;
+  --border: #dce5ee;
+  --control-line: #7d90a3;
+  --success: #176547;
+  --success-bg: #eaf6ee;
+  --success-line: #b4d8c3;
+  --warning: #795207;
+  --warning-bg: #fff7e4;
+  --warning-line: #e5cc94;
+  --danger: #aa393a;
+  --danger-bg: #fdf0ef;
+  --danger-line: #e6bbbb;
+  --rail-text: #edf3fa;
+  --rail-muted: #adc2d8;
+  --rail-line: #344a62;
+  --rail-active: #254665;
+  --focus: #2875b6;
+  --overlay: rgb(15 31 51 / 52%);
+  --shadow: rgb(20 39 65 / 16%);
+  --rail-width: 224px;
+  --sans: "Geist", "Segoe UI", Arial, sans-serif;
+  --mono: "Geist Mono", Consolas, monospace;
+  --type-small: .75rem;
+  --type-control: .8125rem;
+  --type-body: .875rem;
+  --type-section: 1.125rem;
+  --type-title: clamp(1.875rem, 2.8vw, 2.5rem);
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 20px;
+  --sp-6: 24px;
+  --sp-8: 32px;
+  --radius: 6px;
+}

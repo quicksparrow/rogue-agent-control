@@ -1,0 +1,42 @@
+{
+  "name": "rogue-agent-control",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.9 <21 || >=22 <23 || >=24 <25"
+  },
+  "scripts": {
+    "dev": "next dev --hostname 127.0.0.1",
+    "build": "next build --webpack",
+    "start": "next start --hostname 127.0.0.1",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test tests/store.test.ts tests/http.test.ts tests/shopping.test.ts tests/adapters.test.ts tests/firewall.test.ts tests/firewall-api.test.ts tests/payments.test.ts tests/payments-failure.test.ts tests/payments-api.test.ts tests/investigation.test.ts tests/investigation-api.test.ts tests/demo.test.ts",
+    "test:smoke": "tsx scripts/smoke-shopping.ts",
+    "test:investigation": "tsx scripts/smoke-investigation.ts",
+    "test:firewall": "tsx scripts/smoke-firewall.ts",
+    "test:paypal": "tsx scripts/smoke-paypal.ts",
+    "test:e2e": "playwright test",
+    "db:reset": "tsx scripts/reset-db.ts"
+  },
+  "dependencies": {
+    "@next/env": "16.4.5",
+    "ag-grid-community": "36.3.0",
+    "ag-grid-react": "36.3.0",
+    "better-sqlite3": "12.11.1",
+    "lucide-react": "^0.468.0",
+    "next": "16.4.5",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^20.19.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}
